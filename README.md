@@ -1,5 +1,6 @@
 # Student-Teacher Booking Appointment 
-![Demo](https://renuckam.github.io/Student-Teacher-Booking-Appointment/)
+
+[Demo](https://renuckam.github.io/Student-Teacher-Booking-Appointment/)
 
 ## Description
 
