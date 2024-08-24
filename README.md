@@ -46,11 +46,11 @@ Explore the live experience [here](https://renuckam.github.io/Student-Teacher-Bo
     npm install ``
 
 4.  **Configure Firebase**
-   -- Go to the Firebase Console.
+       - Go to the Firebase Console.
     
-   -- Create a new project and set up Firebase Authentication and Firestore.
+       - Create a new project and set up Firebase Authentication and Firestore.
    
-   -- Obtain the Firebase configuration and replace it in firebase-config.js.
+       - Obtain the Firebase configuration and replace it in firebase-config.js.
 
 6.  **Run the application**
     ``
