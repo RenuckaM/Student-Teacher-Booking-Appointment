@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Auth</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #register, #login {
+            display: none;
+        }
+        #register.active, #login.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="register" class="active">
+            <h2>Register</h2>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button id="register-button">Register</button>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            <p id="register-message"></p>
+        </div>
+        <div id="login">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button id="login-button">Login</button>
+            <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+            <p id="login-message"></p>
+        </div>
+        <p><a href="book-appointment.html" class="button-link">Book Appointment</a></p>
+    </div>
+    
+    <!-- // Import Firebase as modules -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB_JmUe4f8MbyRGrw5s0tCMS3FeEqIXoxc",
+            authDomain: "student-teacher-booking-39ecb.firebaseapp.com",
+            databaseURL: "https://student-teacher-booking-39ecb-default-rtdb.firebaseio.com",
+            projectId: "student-teacher-booking-39ecb",
+            storageBucket: "student-teacher-booking-39ecb.appspot.com",
+            messagingSenderId: "976299745163",
+            appId: "1:976299745163:web:e94fb0db6d117208e7998e",
+            measurementId: "G-SXMS7694BD"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app); 
+
+        // Toggle between Register and Login
+        document.getElementById('show-login').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('register').classList.remove('active');
+            document.getElementById('login').classList.add('active');
+        });
+
+        document.getElementById('show-register').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('login').classList.remove('active');
+            document.getElementById('register').classList.add('active');
+        });
+
+        // Register
+        document.getElementById('register-button').addEventListener('click', () => {
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    console.log('User registered:', user);
+                    document.getElementById('register-message').innerText = 'Registration successful!';
+                })
+                .catch((error) => {
+                    console.error('Error:', error.code, error.message);
+                    document.getElementById('register-message').innerText = `Error: ${error.message}`;
+                });
+        });
+
+        // Login
+        document.getElementById('login-button').addEventListener('click', () => {
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    console.log('User logged in:', user);
+                    document.getElementById('login-message').innerText = 'Login successful!';
+                })
+                .catch((error) => {
+                    console.error('Error:', error.code, error.message);
+                    document.getElementById('login-message').innerText = `Error: ${error.message}`;
+                });
+        });
+    </script>
+</body>
+</html>

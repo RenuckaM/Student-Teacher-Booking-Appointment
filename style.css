@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffb3c6; /* Dark background */
+    margin: 0;
+    color: #141414; /* Black text */
+}
+
+#container {
+    width: 400px;
+    padding: 20px;
+    background: #ff4a7d; /* Darker container background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 70px;
+    background-color: #fff;
+    border: 2px solid #ff4a7d; /* The border color */
+    border-radius: 10px; /* Optional: rounds the corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow for a 3D effect */
+    background-color: #ffc0cb; /* Light pink background color */
+    text-align: left;
+}
+
+/* .form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000;
+} */
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff4a7d; /* The pink color for the buttons */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px; /* Adds spacing between the buttons */
+}
+
+.button:hover {
+    background-color: #e63968; /* Darker shade for hover effect */
+}
+
+.button-link {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff4a7d; /* The pink color for the buttons */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px; /* Adds spacing between the buttons */
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    color: #090909; /* Black text */
+}
+
+input {
+    background-color: #e9ecef; /* White input background */
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+p a {
+    color: #000204;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ff4a7d; /* Pink table background */
+    border-radius: 5px;
+}
+
+th, td {
+    border: 1px solid #555; /* Darker border */
+    padding: 10px;
+    text-align: left;
+    color: #fff; /* White text */
+}
+
+th {
+    background-color: #ff4a7d; /* Pink header background */
+}
+#register-email , #register-password , #login-password , #login-email{
+    padding-right:0px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+
+#register, #login {
+    display: none;
+}
+
+#register.active, #login.active {
+    display: block;
+}
