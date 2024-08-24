@@ -1,8 +1,7 @@
 # Student-Teacher Booking Appointment 
 
-# Project Preview
-
-[Demo](https://renuckam.github.io/Student-Teacher-Booking-Appointment/)
+### Live Preview
+You can view a live preview of the application [here](https://renuckam.github.io/Student-Teacher-Booking-Appointment/)
 
 ## Description
 
@@ -17,7 +16,7 @@ The Student-Teacher Booking Appointment system is a web application that allows 
   
 - **Firebase**: For backend services, including authentication, database, and real-time updates.
 
-### Screenshots
+## Screenshots
 
 ## Features
 - **User Authentication**: Students and teachers can sign up and log in using Firebase Authentication.
@@ -30,14 +29,12 @@ The Student-Teacher Booking Appointment system is a web application that allows 
   
 - **Notification System**: Email notifications for upcoming appointments and changes.
 
-## Installation
-
-### Prerequisites
+## Prerequisites
 - [Node.js](https://nodejs.org/) installed on your machine.
   
 - Firebase account and project setup.
 
-### Steps
+## Steps
 1. **Clone the repository**
    ``
    git clone https://github.com/your-username/student-teacher-booking-appointment.git ``
@@ -59,7 +56,7 @@ The Student-Teacher Booking Appointment system is a web application that allows 
     ``
     npm start ``
 
-### Contribution
+## Contribution
 
  1. Fork the repository.
  2. Create a new branch (git checkout -b feature/your-feature).
