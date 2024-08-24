@@ -3,6 +3,8 @@
 The Student-Teacher Booking Appointment system is a web application that allows students to schedule appointments with teachers for academic discussions, mentorship, or consultations. It provides a user-friendly interface for both students and teachers to manage their schedules efficiently.
 
 ## Project Preview
+![image](https://github.com/user-attachments/assets/1058448b-0b04-4239-a69a-1339acf74b34)
+
 Explore the live experience [here](https://renuckam.github.io/Student-Teacher-Booking-Appointment/) 
 
 ## Technologies
