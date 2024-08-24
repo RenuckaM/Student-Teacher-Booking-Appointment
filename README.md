@@ -21,9 +21,7 @@ Explore the live experience [here](https://renuckam.github.io/Student-Teacher-Bo
 ![image](https://github.com/user-attachments/assets/9ba7b48f-bfe8-4240-8e64-19e172560259)
 ![image](https://github.com/user-attachments/assets/c79cc1fa-1056-4ff5-98bf-4a77be849fb8)
 ![image](https://github.com/user-attachments/assets/d01abb68-0b42-4040-9956-3982599ef5c6)
-
-
-
+![image](https://github.com/user-attachments/assets/8894675c-15aa-43d4-a550-024bb36b5f8c)
 
 ## Features
 - **User Authentication**: Students and teachers can sign up and log in using Firebase Authentication.
